@@ -1,7 +1,12 @@
 # Répertoires des sources et des dépendances
-SRCS = srcs/main.c srcs/map_parse.c srcs/map_data.c srcs/display_init.c srcs/render_lines.c \
-       srcs/transform_points.c srcs/memory.c srcs/errors_exit.c srcs/map_utils.c \
-       srcs/debug_utils.c srcs/color.c srcs/key.c
+SRCS = srcs/main.c srcs/errors_exit.c \
+       srcs/map_parse.c srcs/map_data.c srcs/map_utils.c \
+       srcs/display_init.c srcs/display_config.c \
+       srcs/render_lines.c srcs/render_map.c \
+       srcs/transform_points.c srcs/transform_projection.c srcs/transform_rotation.c \
+       srcs/color.c srcs/color_modes.c \
+       srcs/key_handler.c srcs/ui_display.c \
+       srcs/memory.c srcs/debug_utils.c
 
 # Générer la liste des fichiers objets directement dans le répertoire des sources
 OBJS = $(SRCS:srcs/%.c=%.o)
